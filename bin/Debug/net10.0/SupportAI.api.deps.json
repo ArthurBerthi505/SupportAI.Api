@@ -1,0 +1,111 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "SupportAI.api/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "10.0.6",
+          "Microsoft.EntityFrameworkCore.InMemory": "10.0.6"
+        },
+        "runtime": {
+          "SupportAI.api.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.OpenApi/10.0.6": {
+        "dependencies": {
+          "Microsoft.OpenApi": "2.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "assemblyVersion": "10.0.6.0",
+            "fileVersion": "10.0.626.17701"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore/10.0.6": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "10.0.6"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.EntityFrameworkCore.dll": {
+            "assemblyVersion": "10.0.6.0",
+            "fileVersion": "10.0.626.17701"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Abstractions/10.0.6": {
+        "runtime": {
+          "lib/net10.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "assemblyVersion": "10.0.6.0",
+            "fileVersion": "10.0.626.17701"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.InMemory/10.0.6": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.6"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "assemblyVersion": "10.0.6.0",
+            "fileVersion": "10.0.626.17701"
+          }
+        }
+      },
+      "Microsoft.OpenApi/2.0.0": {
+        "runtime": {
+          "lib/net8.0/Microsoft.OpenApi.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SupportAI.api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.OpenApi/10.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WTAQe7MAbbKztRyeCRGZOqqlIqpMHDBz+jKo7LLY6hp4qRqn7iucR24u32KJVxV7mF3tSEfwXH96NgGSiDBw7A==",
+      "path": "microsoft.aspnetcore.openapi/10.0.6",
+      "hashPath": "microsoft.aspnetcore.openapi.10.0.6.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore/10.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eDy7bu3G+51FRC0cPtXTqUI9iAdDYl/XBQ5UguN8NFOA7QNmFvUEf36wA7PZ4ctsnxRN4t3dIvs2VKVE5H+EQQ==",
+      "path": "microsoft.entityframeworkcore/10.0.6",
+      "hashPath": "microsoft.entityframeworkcore.10.0.6.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Abstractions/10.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4F+e6uxhVmyduu+Ve1INxek94adt4RAddWqykXNDnOOWQrJJ20izw/9qRpZdkLnIW9oj/3qnLWUtsv37U0xJCw==",
+      "path": "microsoft.entityframeworkcore.abstractions/10.0.6",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.10.0.6.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/10.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yQQLR6s0NOBJvg/du/w/mJn9ESlQ0XkAQ0zJEPhtlS/Vsnay6LRSdh39Sxy9/SkpYLoNoI9c6FUyP+UIE+BWdg==",
+      "path": "microsoft.entityframeworkcore.inmemory/10.0.6",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.10.0.6.nupkg.sha512"
+    },
+    "Microsoft.OpenApi/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GGYLfzV/G/ct80OZ45JxnWP7NvMX1BCugn/lX7TH5o0lcVaviavsLMTxmFV2AybXWjbi3h6FF1vgZiTK6PXndw==",
+      "path": "microsoft.openapi/2.0.0",
+      "hashPath": "microsoft.openapi.2.0.0.nupkg.sha512"
+    }
+  }
+}
