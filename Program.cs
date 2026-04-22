@@ -1,4 +1,8 @@
+using SupportAI.Api;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<AppDbContext>();
 
 // 1. ADICIONE ESTA LINHA: Registra os serviços de Controller na memória
 builder.Services.AddControllers();
