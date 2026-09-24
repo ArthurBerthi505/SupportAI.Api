@@ -1,47 +1,21 @@
-# 🚀 SupportAI - Sistema de Triagem Inteligente com IA
+# SupportAI API
 
-O **SupportAI** é uma solução completa de backend para automação de suporte ao cliente. O sistema captura tickets via Webhook, utiliza Inteligência Artificial para análise de sentimento e resumo de problemas, e armazena tudo de forma estruturada em um banco de dados relacional.
+An ASP.NET Core API for storing and listing support tickets after an external workflow has analyzed them. The repository targets .NET 10 and uses Entity Framework Core with SQLite.
 
----
+## Implemented endpoints
 
-## 🛠️ Tecnologias Utilizadas
+- POST /api/tickets accepts a ticket DTO, stores the customer email and AI analysis, and returns the created database ID.
+- GET /api/tickets lists stored tickets.
 
-Este projeto demonstra a integração de tecnologias modernas de Backend, No-Code e IA:
+The API receives the analysis as input. n8n, an AI provider, and Telegram notifications are described in the original project concept but are not implemented by this API repository.
 
-* **Linguagem & Framework:** [C# / .NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
-* **Orquestração de Fluxo:** [n8n](https://n8n.io/)
-* **Inteligência Artificial:** [Google Gemini / Hugging Face](https://deepmind.google/technologies/gemini/) (NLP para análise de sentimentos e resumo)
-* **Banco de Dados:** [SQLite](https://www.sqlite.org/index.html) com [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/) (Code-First)
-* **Notificações:** [Telegram Bot API](https://core.telegram.org/bots)
+## Run
 
----
+Install the .NET 10 SDK, then run:
 
-## 🏗️ Arquitetura do Sistema
-
-O fluxo de dados segue o seguinte percurso:
-
-1.  **Ingestão:** Um Webhook recebe um JSON com o e-mail do cliente e o problema relatado.
-2.  **Processamento (IA):** O n8n envia o relato para a IA, que identifica o estado emocional do cliente e cria um resumo técnico.
-3.  **Backend (.NET 8):** O n8n formata o dado e envia uma requisição POST para a nossa API REST.
-4.  **Persistência:** O Backend utiliza o **Entity Framework Core** para gravar o ticket permanentemente no SQLite.
-5.  **Alertas:** Simultaneamente, o n8n notifica a equipe via Telegram sobre o novo chamado processado.
-
----
-
-## 🚀 Como Executar o Projeto
-
-### Pré-requisitos
-* SDK do .NET 8
-* n8n instalado (Local ou Cloud)
-
-### 1. Configurando o Backend
-Clone o repositório e navegue até a pasta da API:
-```bash
-# Instalar dependências
+~~~bash
 dotnet restore
-
-# Executar as migrations para criar o banco SQLite
-dotnet ef database update
-
-# Rodar a aplicação
 dotnet run
+~~~
+
+The project includes EF Core migrations and an application configuration file. Review and configure the database settings for your own environment.
